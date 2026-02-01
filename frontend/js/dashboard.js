@@ -2,7 +2,7 @@ const welcomeEl = document.getElementById("welcome");
 const logoutBtn = document.getElementById("logoutBtn");
 
 const loadUser = async () => {
-  const res = await fetch("http://127.0.0.1:5000/api/auth/me", {
+  const res = await fetch("https://secure-user-portal-backend.onrender.com/api/auth/me", {
     credentials: "include"
   });
 
@@ -16,7 +16,7 @@ const loadUser = async () => {
 };
 
 logoutBtn.addEventListener("click", async () => {
-  await fetch("http://127.0.0.1:5000/api/auth/logout", {
+  await fetch("https://secure-user-portal-backend.onrender.com/api/auth/logout", {
     method: "POST",
     credentials: "include"
   });

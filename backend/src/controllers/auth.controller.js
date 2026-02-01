@@ -61,7 +61,7 @@ const loginUser = async (req, res) => {
       });
     }
 
-    // check password (plain text for now)
+    // check password
     if (user.password !== password) {
       return res.status(401).json({
         message: "Invalid credentials"

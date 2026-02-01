@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/api/auth/register", {
+    const res = await fetch("https://secure-user-portal-backend.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
